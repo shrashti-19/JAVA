@@ -8,13 +8,22 @@ This repository contains various Java programs and algorithms categorized into d
 - **Divide_Conquer/**: Contains implementations of divide and conquer algorithms.
   - `merge_sort.java`: Implementation of the Merge Sort algorithm.
   - `quick_sort.java`: Implementation of the Quick Sort algorithm.
+  - `modifiedBinary.java`: Implementation of a modified binary search algorithm.
+  - `stringMergeSort.java`: Implementation of the Merge Sort algorithm for strings.
 
 - **Leetcode/**: Contains solutions to various LeetCode problems.
+  - `container.java`: Finds the container with the most water.
+  - `Kadens.java`: Implementation of Kadane's algorithm to find the maximum subarray sum.
   - `majorityElement.java`: Finds the majority element in an array.
   - `mergeSorted.java`: Merges two sorted arrays.
+  - `power.java`: Calculates the power of a number.
   - `repeatMissing.java`: Finds the repeated and missing numbers in a matrix.
+  - `search.java`: Searches for a target value in a matrix.
   - `singleNumber.java`: Finds the single number in an array where every other number appears twice.
   - `stock.java`: Calculates the maximum profit from stock prices.
+  - **GFG/**: Contains solutions to problems from GeeksforGeeks.
+    - `reverse.java`: Reverses an array.
+    - `zeroes.java`: Moves all zeroes to the end of an array.
 
 - **practice/**: Contains practice problems and their solutions.
   - `first.java`: Finds all occurrences of a key in an array.
@@ -45,4 +54,10 @@ To run any of the Java programs, navigate to the respective directory and compil
 ```sh
 javac <filename>.java
 java <filename>
-```
+
+
+### For example, to run the merge_sort.java program:
+cd Divide_Conquer
+javac merge_sort.java
+java merge_sort
+
