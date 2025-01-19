@@ -25,6 +25,10 @@ This repository contains various Java programs and algorithms categorized into d
     - `reverse.java`: Reverses an array.
     - `zeroes.java`: Moves all zeroes to the end of an array.
 
+- **BackTracking/**: Contains backtracking problems and their solutions.
+  - `subsets.java`: Finds all subsets of a given string.
+  - `array.java`: Changes an array using backtracking.
+
 - **practice/**: Contains practice problems and their solutions.
   - `first.java`: Finds all occurrences of a key in an array.
   - `fivth.java`: Counts the number of substrings in a string.
@@ -54,10 +58,3 @@ To run any of the Java programs, navigate to the respective directory and compil
 ```sh
 javac <filename>.java
 java <filename>
-
-
-### For example, to run the merge_sort.java program:
-cd Divide_Conquer
-javac merge_sort.java
-java merge_sort
-
