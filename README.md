@@ -24,10 +24,16 @@ This repository contains various Java programs and algorithms categorized into d
   - **GFG/**: Contains solutions to problems from GeeksforGeeks.
     - `reverse.java`: Reverses an array.
     - `zeroes.java`: Moves all zeroes to the end of an array.
+    - `OneTranscation.java`: Finds the maximum profit with one transaction.
+    - `StockSell.java`: Finds the maximum profit with multiple transactions.
 
 - **BackTracking/**: Contains backtracking problems and their solutions.
   - `subsets.java`: Finds all subsets of a given string.
   - `array.java`: Changes an array using backtracking.
+  - `grid.java`: Finds the number of ways to traverse a grid.
+  - `NQueens.java`: Solves the N-Queens problem.
+  - `permutations.java`: Finds all permutations of a given string.
+  - `sudoku.java`: Solves a Sudoku puzzle.
 
 - **practice/**: Contains practice problems and their solutions.
   - `first.java`: Finds all occurrences of a key in an array.
