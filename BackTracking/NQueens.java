@@ -40,7 +40,7 @@ public class NQueens{
             board[row][j]='Q';
             if(nQueens(board, row+1)){
                 return true;
-            };
+            }
             board[row][j]='X';//backtrack krke aaye
             }
         }
