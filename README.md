@@ -21,6 +21,8 @@ This repository contains various Java programs and algorithms categorized into d
   - `search.java`: Searches for a target value in a matrix.
   - `singleNumber.java`: Finds the single number in an array where every other number appears twice.
   - `stock.java`: Calculates the maximum profit from stock prices.
+  - `minimum.java`: Finds the minimum height difference after modifying the array.
+  - `Permutation.java`: Finds the next permutation of an array.
   - **GFG/**: Contains solutions to problems from GeeksforGeeks.
     - `reverse.java`: Reverses an array.
     - `zeroes.java`: Moves all zeroes to the end of an array.
