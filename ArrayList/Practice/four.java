@@ -2,16 +2,33 @@ import java.util.ArrayList;
 public class four{
     public static ArrayList BeautifulArray(int n){
         ArrayList<Integer> result = new ArrayList<>();
-        for(int i=2 ; i<=n ; i=i+2){
-            result.add(i);
+        result.add(1); // Start with the base case
+        
+        // Construct the array iteratively
+        while (result.size() < n) {
+            ArrayList<Integer> temp = new ArrayList<>();
+            
+            // Add all odd numbers from the previous result
+            for (int num : result) {
+                if (2 * num - 1 <= n) {
+                    temp.add(2 * num - 1);
+                }
+            }
+            
+            // Add all even numbers from the previous result
+            for (int num : result) {
+                if (2 * num <= n) {
+                    temp.add(2 * num);
+                }
+            }
+            
+            result = temp;
         }
-        for(int i=1 ; i<=n ; i=i+2){
-            result.add(i);
-        }
+        
         return result;
     }
     public static void main(String[] args) {
-        int n=4;
+        int n=5;
         System.out.println(BeautifulArray(n));
     }
 }
