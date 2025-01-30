@@ -31,7 +31,7 @@ public class linked2{
         
         linked2 list = new linked2();
         list.addFirst(1);
-        list.addFirst(2);
+        list.addFirst(2); 
         
         
     }
