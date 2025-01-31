@@ -37,6 +37,13 @@ This repository contains various Java programs and algorithms categorized into d
   - `permutations.java`: Finds all permutations of a given string.
   - `sudoku.java`: Solves a Sudoku puzzle.
 
+- **Linked_List/**: Contains implementations of linked list operations.
+  - `add.java`: Adds elements to the linked list.
+  - `Last.java`: Adds elements to the end of the linked list.
+  - `linked.java`: Basic linked list implementation.
+  - `linked2.java`: Another linked list implementation.
+  - `print.java`: Prints the linked list.
+
 - **practice/**: Contains practice problems and their solutions.
   - `first.java`: Finds all occurrences of a key in an array.
   - `fivth.java`: Counts the number of substrings in a string.
