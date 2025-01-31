@@ -23,11 +23,24 @@ This repository contains various Java programs and algorithms categorized into d
   - `stock.java`: Calculates the maximum profit from stock prices.
   - `minimum.java`: Finds the minimum height difference after modifying the array.
   - `Permutation.java`: Finds the next permutation of an array.
+  - `duplicates.java`: Finds duplicates in an array.
+  - `subarray.java`: Finds the number of subarrays that sum to a target.
+  - `Sum.java`: Finds triplets that sum to zero.
+  - `Foursum.java`: Finds quadruplets that sum to a target.
   - **GFG/**: Contains solutions to problems from GeeksforGeeks.
     - `reverse.java`: Reverses an array.
     - `zeroes.java`: Moves all zeroes to the end of an array.
     - `OneTranscation.java`: Finds the maximum profit with one transaction.
     - `StockSell.java`: Finds the maximum profit with multiple transactions.
+    - `maxCircular.java`: Finds the maximum sum of a circular subarray.
+    - `kadens.java`: Implementation of Kadane's algorithm.
+    - `Maj.java`: Finds the majority element in an array.
+    - `MaxProduct.java`: Finds the maximum product of a subarray.
+    - `missingnumber.java`: Finds the missing number in an array.
+    - `permutations.java`: Finds the next permutation of an array.
+    - `Rotate.java`: Rotates an array.
+    - `countTriplets.java`: Counts the number of triplets that sum to a target.
+    - `minimum.java`: Finds the minimum height difference after modifying the array.
 
 - **BackTracking/**: Contains backtracking problems and their solutions.
   - `subsets.java`: Finds all subsets of a given string.
@@ -36,6 +49,10 @@ This repository contains various Java programs and algorithms categorized into d
   - `NQueens.java`: Solves the N-Queens problem.
   - `permutations.java`: Finds all permutations of a given string.
   - `sudoku.java`: Solves a Sudoku puzzle.
+  - **practice/**: Contains practice problems and their solutions.
+    - `keyboard.java`: Solves the keyboard problem.
+    - `Knight.java`: Solves the Knight's tour problem.
+    - `maze.java`: Solves the maze problem.
 
 - **Linked_List/**: Contains implementations of linked list operations.
   - `add.java`: Adds elements to the linked list.
@@ -43,6 +60,21 @@ This repository contains various Java programs and algorithms categorized into d
   - `linked.java`: Basic linked list implementation.
   - `linked2.java`: Another linked list implementation.
   - `print.java`: Prints the linked list.
+
+- **ArrayList/**: Contains implementations and operations on ArrayLists.
+  - `Basics.java`: Basic operations on ArrayLists.
+  - `ContainerWater.java`: Finds the maximum area of water that can be contained.
+  - `Maximum.java`: Finds the maximum element in an ArrayList.
+  - `multiList.java`: Demonstrates nested ArrayLists.
+  - `pairSum1.java`: Finds pairs in an ArrayList that sum to a target.
+  - `pairsum2.java`: Finds pairs in a rotated sorted ArrayList that sum to a target.
+  - `Practice/one.java`: Checks if an ArrayList is monotonic.
+  - `Practice/two.java`: Finds lonely numbers in an ArrayList.
+  - `Practice/three.java`: Finds the most frequent number following a key in an ArrayList.
+  - `Practice/four.java`: Generates a beautiful array.
+  - `Reverse.java`: Reverses an ArrayList.
+  - `Sorting.java`: Sorts an ArrayList.
+  - `Swap.java`: Swaps elements in an ArrayList.
 
 - **practice/**: Contains practice problems and their solutions.
   - `first.java`: Finds all occurrences of a key in an array.
