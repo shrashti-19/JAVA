@@ -1,7 +1,5 @@
 
 
-
-
 public class add{
     public class Node{
         int data;
@@ -13,8 +11,10 @@ public class add{
     }
     public static Node head;
     public static Node tail;
+    public static int size;
     public void addFirst(int data){
         Node newNode = new Node(data);
+        size++;
         if(head == null){
             head=tail = newNode;
             return;
@@ -25,6 +25,7 @@ public class add{
 
     public void addLast(int data){
         Node newNode = new Node(data);
+        size++;
         if(head ==null){
             head=tail=newNode;
             return;
@@ -35,6 +36,7 @@ public class add{
     }
     public void add(int index , int data){
         Node newNode = new Node(data);
+        size++;
         Node temp =head;
         if(index ==0 ){
             addFirst(data);
@@ -73,6 +75,6 @@ public class add{
         list.addLast(5);
         list.add(2,9);
         list.ll();
-
+        System.out.println("Size of linked list is :"+ list.size);
     }
 }
