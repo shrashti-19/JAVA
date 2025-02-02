@@ -53,6 +53,22 @@ public class add{
         temp.next = newNode;
     }
 
+    public int removeFirst(){
+        //edge cases
+        if(size==0){
+            System.out.println("LL is empty!");
+        }else if(size==1){
+            int val = head.data;
+            size=0;
+            head=tail=null;
+            return val;
+        }
+
+        int val = head.data;
+        head = head.next;
+        size--;
+        return val;
+    }
     public void ll(){
         if(head == null){
             System.out.println("List is empty");
@@ -75,6 +91,9 @@ public class add{
         list.addLast(5);
         list.add(2,9);
         list.ll();
-        System.out.println("Size of linked list is :"+ list.size);
+        //System.out.println("Size of linked list is :"+ list.size);
+        list.removeFirst();
+        list.ll();
+        System.out.println(list.size);
     }
 }
