@@ -107,6 +107,19 @@ public class add{
         System.out.println("null");
         
     }
+    public int SearchIter(int key){
+        Node temp=head;
+        int index=0;
+        while(temp!=null){
+            if(temp.data==key){
+                return index;
+            }
+            temp=temp.next;
+            index++;
+        }
+
+        return -1;
+    }
     public static void main(String[] args) {
         add list = new add();
         list.addFirst(1);
@@ -123,5 +136,8 @@ public class add{
         list.removeLast();
         list.ll();
         System.out.println(list.size);
+
+        int key=10;
+        System.out.println(list.SearchIter(key));
     }
 }
