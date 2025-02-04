@@ -151,6 +151,34 @@ public class add{
         }
         head = prev;
     }
+
+    public void deleteNthNode(int n){
+        //calculate size
+        if(head==null) return;
+        Node temp = head;
+        int size=0;
+        while(temp!=null){
+            temp=temp.next;
+            size++;
+        }
+
+        if(n>size) return;
+        //head delete
+        if(n==size){
+            head=head.next;
+            return;
+        }
+
+        //other elements
+        
+        int iToFound = size-n;
+        Node prev = head;
+        for(int i=1 ; i<iToFound ; i++){
+            prev = prev.next;
+            
+        }
+        prev.next = prev.next.next;
+    }
     public static void main(String[] args) {
         add list = new add();
         list.addFirst(1);
@@ -173,7 +201,12 @@ public class add{
 
         System.out.println(list.recursiveSearch(key));
 
-        list.reverse();
+        // list.reverse();
+        // list.ll();
+
+        System.out.println("Deletion from Nth Node");
+      
+        list.deleteNthNode(3);
         list.ll();
     }
 }
