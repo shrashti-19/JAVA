@@ -120,6 +120,24 @@ public class add{
 
         return -1;
     }
+    public static int helper(Node head,int key){
+        if(head==null){
+            return -1;
+        }
+        if(head.data == key){
+            return 0;
+        }
+
+        int index = helper(head.next, key);
+        if(index==-1){
+            return -1;
+        }
+        return index+1;
+    }
+
+    public int recursiveSearch(int key){
+        return helper(head,key);
+    }
     public static void main(String[] args) {
         add list = new add();
         list.addFirst(1);
@@ -137,7 +155,9 @@ public class add{
         list.ll();
         System.out.println(list.size);
 
-        int key=10;
+        int key=9;
         System.out.println(list.SearchIter(key));
+
+        System.out.println(list.recursiveSearch(key));
     }
 }
