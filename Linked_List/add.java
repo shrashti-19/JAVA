@@ -138,6 +138,19 @@ public class add{
     public int recursiveSearch(int key){
         return helper(head,key);
     }
+
+    public void reverse(){
+        Node prev = null;
+        Node current = tail=head;
+
+        while(current!=null){
+            Node next = current.next;
+            current.next = prev;
+            prev= current;
+            current = next;
+        }
+        head = prev;
+    }
     public static void main(String[] args) {
         add list = new add();
         list.addFirst(1);
@@ -159,5 +172,8 @@ public class add{
         System.out.println(list.SearchIter(key));
 
         System.out.println(list.recursiveSearch(key));
+
+        list.reverse();
+        list.ll();
     }
 }
