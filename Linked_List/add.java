@@ -1,5 +1,7 @@
 
 
+
+
 public class add{
     public class Node{
         int data;
@@ -179,34 +181,89 @@ public class add{
         }
         prev.next = prev.next.next;
     }
+
+
+    public Node findMid(Node head){//helper function
+        Node slow = head;
+        Node fast = head;
+        while(fast!=null && fast.next!=null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow; //middle node
+    }
+
+    public boolean checkPalindrome(){
+        //edge case
+
+        if(head==null || head.next==null ) return true;
+
+        //step - find mid
+        Node midNode = findMid(head);
+
+        //2- reverse the linked list
+        Node prev = null;
+        Node current = midNode;
+        Node next;
+        while(current!=null){
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+
+        } 
+
+        //right half head
+        Node right = prev;
+        Node left = head;
+        //check the left part adn right part
+
+        while(right!=null){
+            if(left.data !=right.data){
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+
+        return true;
+    }
     public static void main(String[] args) {
         add list = new add();
-        list.addFirst(1);
-        list.addFirst(3);
-        list.addFirst(4);
-        list.addLast(5);
-        list.add(2,9);
-        list.ll();
-        //System.out.println("Size of linked list is :"+ list.size);
-        list.removeFirst();
-        list.ll();
-        System.out.println(list.size);
+        // list.addFirst(1);
+        // list.addFirst(3);
+        // list.addFirst(4);
+        // list.addLast(5);
+        // list.add(2,9);
+        // list.ll();
+        // //System.out.println("Size of linked list is :"+ list.size);
+        // list.removeFirst();
+        // list.ll();
+        // System.out.println(list.size);
 
-        list.removeLast();
-        list.ll();
-        System.out.println(list.size);
+        // list.removeLast();
+        // list.ll();
+        // System.out.println(list.size);
 
-        int key=9;
-        System.out.println(list.SearchIter(key));
+        // int key=9;
+        // System.out.println(list.SearchIter(key));
 
-        System.out.println(list.recursiveSearch(key));
+        // System.out.println(list.recursiveSearch(key));
 
-        // list.reverse();
+        // // list.reverse();
+        // // list.ll();
+
+        // System.out.println("Deletion from Nth Node");
+      
+        // list.deleteNthNode(3);
         // list.ll();
 
-        System.out.println("Deletion from Nth Node");
-      
-        list.deleteNthNode(3);
+        list.addLast(1);
+        list.addLast(2);
+        list.addLast(2);
+        // list.addLast(1);
         list.ll();
+
+        System.out.println(list.checkPalindrome());
     }
 }
