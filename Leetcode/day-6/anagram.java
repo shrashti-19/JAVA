@@ -9,7 +9,7 @@ public class anagram{
             return false;
         }
             char[] sCharArray = s.toCharArray();
-            char[] tCharArray = t.toCharArray();
+            char[] tCharArray = t.toCharArray(); //strings are immutable
             Arrays.sort(sCharArray);
             Arrays.sort(tCharArray);
 
