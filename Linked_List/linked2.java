@@ -27,7 +27,7 @@ public class linked2{
     }
 
     
-    public static void main(String[] args) {
+     {
         
         linked2 list = new linked2();
         list.addFirst(1);
