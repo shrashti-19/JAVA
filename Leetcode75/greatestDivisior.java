@@ -19,6 +19,6 @@ public class greatestDivisior{
     public static void main(String[] args) {
         String str1 = "LEET";
         String str2 = "CODE";
-        System.out.println(gcdOfStrings(str1, str2));
+        System.out.println(gcdOfStrings(str1, str2));                                                        
     }
 }
