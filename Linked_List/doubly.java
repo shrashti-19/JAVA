@@ -1,3 +1,5 @@
+
+
 public class doubly{
     public static class Node{
         int data ;
@@ -79,6 +81,22 @@ public class doubly{
         return val;
     }
 
+    public void reverseLL(){
+        Node current = head;
+        Node prev = null;
+        Node next;
+        while(current!=null){
+            next = current.next;
+            current.next = prev;
+            current.prev = next;
+            prev = current;
+            current = next;
+        }
+
+        head = prev;
+
+    }
+
     public void print(){
         Node temp = head;
         while(temp!=null){
@@ -93,8 +111,10 @@ public class doubly{
         dll.addFirst(2);
         dll.addLast(3);
         dll.addLast(4);
-        dll.removeFirst();
-        dll.removeLast();
+        // dll.removeFirst();
+        // dll.removeLast();
+        dll.print();
+        dll.reverseLL();
         dll.print();
 
     }
