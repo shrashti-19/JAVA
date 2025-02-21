@@ -76,6 +76,19 @@ This repository contains various Java programs and algorithms categorized into d
   - `Sorting.java`: Sorts an ArrayList.
   - `Swap.java`: Swaps elements in an ArrayList.
 
+- **Stacks/**: Contains implementations and operations on stacks.
+  - `bottom.java`: Pushes an element to the bottom of a stack.
+  - `duplicate.java`: Removes duplicate elements from a stack.
+  - `framework.java`: Demonstrates basic stack operations.
+  - `histogram.java`: Finds the maximum area of a histogram.
+  - `implement.java`: Implements a stack using an ArrayList.
+  - `ll.java`: Implements a stack using a linked list.
+  - `nextElement.java`: Finds the next greater element for each element in an array.
+  - `Reverse.java`: Reverses a stack.
+  - `reverseString.java`: Reverses a string using a stack.
+  - `stock.java`: Solves the stock span problem.
+  - `valid.java`: Checks if a string of parentheses is valid.
+
 - **practice/**: Contains practice problems and their solutions.
   - `first.java`: Finds all occurrences of a key in an array.
   - `fivth.java`: Counts the number of substrings in a string.
