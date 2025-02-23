@@ -27,6 +27,7 @@ This repository contains various Java programs and algorithms categorized into d
   - `subarray.java`: Finds the number of subarrays that sum to a target.
   - `Sum.java`: Finds triplets that sum to zero.
   - `Foursum.java`: Finds quadruplets that sum to a target.
+  - `largest.java`: Finds the largest rectangle formed in the histogram.
   - **GFG/**: Contains solutions to problems from GeeksforGeeks.
     - `reverse.java`: Reverses an array.
     - `zeroes.java`: Moves all zeroes to the end of an array.
