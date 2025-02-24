@@ -8,6 +8,7 @@ This repository contains various Java programs and algorithms categorized into d
 - **Divide_Conquer/**: Contains implementations of divide and conquer algorithms.
   - `merge_sort.java`: Implementation of the Merge Sort algorithm.
   - `quick_sort.java`: Implementation of the Quick Sort algorithm.
+  
   - `modifiedBinary.java`: Implementation of a modified binary search algorithm.
   - `stringMergeSort.java`: Implementation of the Merge Sort algorithm for strings.
 
