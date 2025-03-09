@@ -22,7 +22,7 @@ public class trappingRainwater{
         return trappedWater;
     }
      public static void main(String[] args){
-        int heights[] = {4,2,0,3,2,5};
+        int heights[] = {7,0,4,2,5,0,6,4,0,6};
         System.out.println(maxtrapWater(heights));
      }
 }
