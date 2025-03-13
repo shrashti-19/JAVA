@@ -11,7 +11,7 @@ public class Queues{
         public  boolean isEmpty(){
             return q1.isEmpty() && q2.isEmpty();
         }
-        public void push(int data){
+        public void push(int data){ //O(1)
             if(!q1.isEmpty()){
                 q1.add(data);
             }else{
@@ -19,7 +19,7 @@ public class Queues{
             }
         }
 
-        public int pop(){
+        public int pop(){ //O(n)
            
             if(isEmpty()){
                 System.out.println("Queue is empty");
@@ -46,7 +46,7 @@ public class Queues{
         return top;
         }
 
-        public int peek(){
+        public int peek(){ //O(1)
             //check whether the queues are empty are not
             if(isEmpty()){
                 System.out.println("Queue is empty");
