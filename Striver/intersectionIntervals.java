@@ -6,6 +6,7 @@ public class intersectionIntervals{
     public static ArrayList<ArrayList<Integer>> intersectionInterval(ArrayList<ArrayList<Integer>> interval1,ArrayList<ArrayList<Integer>> interval2){
 
         int n1 = interval1.size();
+        System.out.println(n1);
         int n2 = interval2.size();
         int i=0,j=0;
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
