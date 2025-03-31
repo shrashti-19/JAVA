@@ -1,3 +1,6 @@
+
+import java.util.*;
+
 //preorder sequence given then we are generating the tree
 public class preorder{
     static class Node{
@@ -48,6 +51,37 @@ public class preorder{
         postorder(root.right);
         System.out.println(root.data + " ");
     }
+    public static void levelOrderTraversal(Node root){
+        if(root == null){
+            return;
+        }
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+        q.add(null);
+        while(!q.isEmpty()){
+            Node currentNode = q.remove();
+            if(currentNode == null){
+                System.out.println(); //nextline print
+
+                if(q.isEmpty()){
+                    break;
+                }else{
+                    //elements bache hue hai
+                    q.add(null);
+                }
+            }else{
+                System.out.println(currentNode.data + " ");
+                if(currentNode.left!=null){
+                    q.add(currentNode.left);
+                }
+                if(currentNode.right!=null){
+                    q.add(currentNode.right);
+                }
+            }
+
+        }
+
+    }
     public static void main(String[] args) {
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree tree = new BinaryTree();
@@ -55,6 +89,7 @@ public class preorder{
         //System.out.println(root.data);
         //preorder(root);
         //inorder(root);
-        postorder(root);
+        //postorder(root);
+        levelOrderTraversal(root);
     }
 }
