@@ -93,6 +93,16 @@ public class preorder{
         return height;
         
     }
+    public static int countofNodes(Node root){
+        if(root == null){
+            return 0;
+        }
+
+        int leftCount = countofNodes(root.left);
+        int rightCount = countofNodes(root.right);
+        int finalCount = leftCount + rightCount +1;
+        return finalCount;
+    }
     public static void main(String[] args) {
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree tree = new BinaryTree();
@@ -103,5 +113,6 @@ public class preorder{
         //postorder(root);
         //levelOrderTraversal(root);
         System.out.println("Height of a tree : "+ heightOfTree(root));
+        System.out.println("Total Number of Nodes : " + countofNodes(root));
     }
 }
