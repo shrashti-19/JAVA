@@ -31,7 +31,7 @@ public class valid{
 
     }
     public static void main(String[] args) {
-        String s = "{}([)";
+        String s = "{}";
         System.out.println(validParanthesis(s));
     }
 }
