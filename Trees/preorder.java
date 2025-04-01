@@ -103,6 +103,17 @@ public class preorder{
         int finalCount = leftCount + rightCount +1;
         return finalCount;
     }
+    public static int sum(Node root){
+        if(root==null){
+            return 0;
+        }
+
+        int leftSum = sum(root.left);
+        int rightSum = sum(root.right);
+        int totalSum = leftSum+rightSum + root.data;
+
+        return totalSum;
+    }
     public static void main(String[] args) {
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree tree = new BinaryTree();
@@ -114,5 +125,6 @@ public class preorder{
         //levelOrderTraversal(root);
         System.out.println("Height of a tree : "+ heightOfTree(root));
         System.out.println("Total Number of Nodes : " + countofNodes(root));
+        System.out.println("sum is  : " + sum(root));
     }
 }
