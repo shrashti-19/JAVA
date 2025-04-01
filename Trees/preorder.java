@@ -82,6 +82,17 @@ public class preorder{
         }
 
     }
+    public static int heightOfTree(Node root){
+        if(root == null){
+            return 0;
+        }
+        int leftChild = heightOfTree(root.left);
+        int rightChild = heightOfTree(root.right);
+
+        int height = Math.max(leftChild, rightChild) +1;
+        return height;
+        
+    }
     public static void main(String[] args) {
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree tree = new BinaryTree();
@@ -90,6 +101,7 @@ public class preorder{
         //preorder(root);
         //inorder(root);
         //postorder(root);
-        levelOrderTraversal(root);
+        //levelOrderTraversal(root);
+        System.out.println("Height of a tree : "+ heightOfTree(root));
     }
 }
