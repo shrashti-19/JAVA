@@ -1,3 +1,5 @@
+
+
 public class diameter{
     static class Node{
         int data;
@@ -50,6 +52,28 @@ public class diameter{
 
 
         }
+        static class Info{
+            int diam;
+            int ht;
+            
+            public Info(int diam,int ht){
+                this.diam = diam;
+                this.ht = ht;
+            }
+        }
+        public static Info diamter2(Node root){
+            if(root == null){
+                return new Info(0,0);
+            }
+
+            Info leftInfo = diamter2(root.left);
+            Info rightInfo = diamter2(root.right);
+
+            int selfDiamter = Math.max(Math.max(leftInfo.diam,rightInfo.diam) , leftInfo.ht+rightInfo.ht+1);
+            int height = Math.max(leftInfo.ht,rightInfo.ht)+1;
+
+            return new Info(selfDiamter,height);
+        }
     }
     public static void main(String[] args) {
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
@@ -57,5 +81,6 @@ public class diameter{
         Node root = tree.buildTree(nodes);
         System.out.println(root.data);
         System.out.println(BinaryTree.diameter(root));
+        System.out.println(BinaryTree.diamter2(root).diam);
     }
 }
