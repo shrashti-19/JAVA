@@ -14,13 +14,23 @@ public class first{
         // int pop2= hm.get("Indoensia");
         // System.err.println(pop2);
         
-        System.out.println(hm.containsKey("India"));
-        hm.remove("China");
-        System.out.println(hm);
+        // System.out.println(hm.containsKey("India"));
+        // hm.remove("China");
+        // System.out.println(hm);
 
-        System.out.println(hm.size());
+        // System.out.println(hm.size());
 
-        hm.clear();
-        System.out.println(hm.isEmpty());
+        // hm.clear();
+        // System.out.println(hm.isEmpty());
+
+        Set<String> keys = hm.keySet();
+        System.out.println(keys);
+
+        //loop over the key -> for each collection
+
+        for(String k: keys){
+            System.out.println("key=" + k + ",value="+ hm.get(k));
+        }
+
     } 
 }
