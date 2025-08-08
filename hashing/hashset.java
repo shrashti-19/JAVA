@@ -15,6 +15,7 @@ public class hashset {
         }
         set.clear();
         System.out.println(set.size());
+        System.out.println(set.isEmpty());
     }
     
 
