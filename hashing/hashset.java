@@ -10,9 +10,13 @@ public class hashset {
         set.add(8);
         set.add(9);
 
-        Iterator it = set.iterator();
-        while(it.hasNext()){
-            System.out.println(it.next());
+        // Iterator it = set.iterator();
+        // while(it.hasNext()){
+        //     System.out.println(it.next());
+        // }
+
+        for(int i : set){
+            System.out.println(i);
         }
 
         // System.out.println(set);
