@@ -34,14 +34,27 @@ public class insert{
         }
         return current.eow == true;
     }
+    public static boolean wordBreak(String key){
+        if(key.length()==0) return true;
+
+        for(int i=1 ; i<=key.length() ; i++){
+            if(search(key.substring(0,i)) && wordBreak(key.substring(i))){
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main(String args[]){
-        String words[] = {"the", "a", "their", "there", "any", "thee"};
+        String words[] = {"i", "like", "sam", "samsung", "mobile", "ice"};
         for(int i=0 ; i<words.length ; i++){
             insert(words[i]);
         }
 
-        System.out.println(search("the"));
-        System.out.println(search("an"));
+        // System.out.println(search("the"));
+        // System.out.println(search("an"));
+        String key = "ilikesamsu";
+        System.out.println(wordBreak(key));
+
 
     }
 }
