@@ -64,11 +64,27 @@ public class bfs{
             }
         }
     }
+    public static void dfs(ArrayList<Edge>[] graph, int curr, boolean[]visited){
+
+        System.out.print(curr + " ");
+        visited[curr] = true;
+
+        for(int i=0 ; i<graph[curr].size() ; i++){
+            
+            Edge e = graph[curr].get(i);
+            if(!visited[e.dest]) {
+                dfs(graph, e.dest, visited);
+            }
+        }
+    }
     public static void main(String args[]){
         int V = 7;
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph, V);
         bfs(graph);
 
+        System.out.println("DFS traversal");
+        boolean[] visited = new boolean[V];
+        dfs(graph,0, visited);
     }
 }
