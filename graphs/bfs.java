@@ -77,14 +77,29 @@ public class bfs{
             }
         }
     }
+
+    public static boolean hasPath(ArrayList<Edge>[]graph, int src, int dest, boolean[]visited){
+        if(src==dest) return true;
+        visited[src] = true;
+        for(int i=0 ; i<graph[src].size() ; i++){
+            Edge e = graph[src].get(i); //neighbors
+
+            if(!visited[e.dest] && hasPath(graph, e.dest, dest, visited)){
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main(String args[]){
         int V = 7;
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph, V);
         bfs(graph);
 
-        System.out.println("DFS traversal");
+        //System.out.println("DFS traversal");
         boolean[] visited = new boolean[V];
-        dfs(graph,0, visited);
+        //dfs(graph,0, visited);
+
+        System.out.println("Has Path or not? " + hasPath(graph, 0, 5, visited));
     }
 }
